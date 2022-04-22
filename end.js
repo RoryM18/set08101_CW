@@ -30,5 +30,5 @@ saveHighScore = e => {
     highScores.splice(5)
 
     localStorage.setItem('highScore', JSON.stringify(highScores))
-    window.location.assign('/set08101_CW/')
+    window.location.assign('/')
 }
