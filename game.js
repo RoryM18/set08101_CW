@@ -3,7 +3,6 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-const audio = new Audio();
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -101,7 +100,6 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
-            audio.src ="/set08101_CW/bells-positive-sound-SBA-300462621-preview.mp3"
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
