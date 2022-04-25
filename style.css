@@ -107,7 +107,7 @@ h2 {
     margin-left: 1rem
 }
 
-.fa-album-collection {
+.fa-compact-disc {
     font-size: 2.5rem;
     margin-left: 1rem
 }
@@ -157,6 +157,12 @@ input::placeholder {
 }
 
 .fa-repeat {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26)
+}
+
+.fa-floppy-disk {
     margin-left: 1rem;
     font-size: 2rem;
     color: rgb(28, 26, 26)
