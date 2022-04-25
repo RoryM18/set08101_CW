@@ -10,6 +10,8 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestion = {};
 
+var mySound
+
 let questions = [
     {
         question: "Eminem's 8 Mile is named after a road in which city?",
@@ -100,6 +102,14 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+            mySound = new Audio("/correct.wav")
+
+            mySound.play()
+        }
+        if(classToApply === 'incorrect') {
+            mySound = new Audio("/wrong.wav")
+
+            mySound.play()
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
