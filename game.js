@@ -102,12 +102,12 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
-            mySound = new Audio("set08101_CW/correct.wav")
+            mySound = new Audio("audio/correct.wav")
 
             mySound.play()
         }
         if(classToApply === 'incorrect') {
-            mySound = new Audio("set08101_CW/wrong.wav")
+            mySound = new Audio("audio/wrong.wav")
 
             mySound.play()
         }
