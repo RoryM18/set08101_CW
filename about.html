@@ -5,9 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <script src="https://kit.fontawesome.com/0338e7cba6.js" crossorigin="anonymous"></script>>
 </head>
+
+<!-- Body of the website with the content of the page-->
 <body>
-    
+    <!-- Navigation Bar to all the other web pages within this website -->
+    <div class="navBar">
+    <nav>
+        <ul>
+            <li class="navbarlist"><a href="/set08101_CW/index.html"> <b>Home</b></a> </li>
+            <li class="navbarlist"><a href="/set08101_CW/game.html"> <b>Quiz</b></a> </li>
+            <li class="navbarlist"><a href="/set08101_CW/highscores.html"> <b>High Scores</b></a> </li>
+            <li style="float:right"><b  class="active" href="#About">About</b></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!-- Use of a grid to create a layout for page elements (three sections side by side with the middle section being the widest)-->
+    <div class="grid-container">
+        <!-- Grid Section 1 - with image -->
+        <div class="grid-item" id="grid-item1"> 
+            <img class="gridImages" src="/set08101_CW/catfish.jpeg" alt="Album cover from band Catfish and the Bottlemen" height="600" width = "240">
+            <img class="gridImages" src="/set08101_CW/Biffy-Clyro.jpg" alt="Album cover from band Biffy Biffy Clyro" height="600" width = "240">
+        </div> 
+
+        <!-- Grid section 2  - little bit about the authour (me)-->
+        <div class="grid-item" id="grid-item2">
+            <h1> 2022 Music Quiz - About </h1>
+
+            <p>
+                Hey, my name is Rory Mackintosh and I am currently studying Computing at Edinburgh Napier University. I am currently in my second year of university in my second semester where I am studying Web Technologies, Software Engineering Methods and Algorithms and Data Structures. This project is the second coursework for Web Technologies which focuses on the coding languages and skills of HTML, CSS and Java Script. To show our knowledge and skill we were tasked with developing a quiz website about anything we wanted I decided to choose music as I am always listening to it and it is a big part of my life.
+            </p> 
+            <br>
+
+            <!-- Image which includes the author with a caption-->
+            <center> 
+                <figure>
+                <img id="myImage"src="/set08101_CW/BiffyClyroConcert.jpeg" alt="Image of a Biffy Clyro concert" height="400" width="600"> 
+                <figcaption>Example of one of Biffy Cylros concerts</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <p>
+                I have always loved music and listen to it every oppurtunity I get no matter what task I am doing. I chose to do a music quiz to express my love of music and computing alongside each other and to allow me to feel more connected with this course work allowing me to add a personal touch to my website rather than just focusing on features for marks.
+            </p>
+
+            <p>
+                I enjoy being able to go to concerts whenever an artist I like comes to Scotland. I will be seeing Biffy Cylro this June (2022) which I am very excited about. I have included an example pictures of what one of their concerts looks like within this page.
+            </p>
+            
+            <p> 
+               My favourite Genre of music is defineitly rock, I enjoy all types of rock and weather thats classic, indie, alternatvce or hard rock. I also enjoy other genres such as pop, punk or rap. My favourite bands are Biffy Clyro, Catfish and the Bottlemen, Imagine Dragons, Nirvana and foo fighters. 
+            </p>
+     
+        </div>
+
+        <!-- Grid section 3 - with image -->
+        <div class="grid-item" id="grid-item3">
+            <img class="gridImages" src="/set08101_CW/Clash.jpg" alt="Album cover from band Clash" height="600" width = "240">
+            <img class="gridImages" src="/set08101_CW/Havana.jpg" alt="Album cover from singer Camila Cabello" height="600" width = "240">
+        </div> 
+    </div>
 </body>
+
+
+ <!-- Footer of the website-->
+<footer> 
+<!-- Use of a gird to create a simple layout for the webiste footer-->
+    <div class="footerGrid">
+    <div class="footer-item"></div> 
+    <div class="footer-item">Rory Mackintosh</div>
+    <div class="footer-item"></div> 
+    <div class="footer-item"></div>
+    <div class="footer-item">Edinburgh Napier University</div> 
+    <div class="footer-item"></div>
+    <div class="footer-item">2022 Music Quiz</div> 
+    <div class="footer-item"></div> 
+    <div class="footer-item"></div>
+    <div class="footer-item">Web Technologies</div>
+    <div class="footer-item"></div>
+    <div class="footer-item">40492068@live.napier.ac.uk</div>
+    <div class="footer-item"></div>
+
+</div>
+</footer>
 </html>
