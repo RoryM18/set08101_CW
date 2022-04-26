@@ -1,5 +1,3 @@
-/* General HTML Elements*/
-
 /* Body*/
 body{
     background-color: white ;
@@ -97,38 +95,13 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Interactice properties  */
-
 /* Bold list items being hovered over */
 li b:hover {
         background-color: rgb(129, 230, 154);
 }
   
-/* quizbutton items being hovered over */
-#quizButton:hover {
-  background-color: rgb(230, 163, 167);
-  color: white;
-}
-
-/* buttons items being hovered over */
-.btn:hover {
-  border-color: yellow;
-    
-}
 
 /* Classes  */
-
 
 .active 
 {
@@ -254,5 +227,4 @@ li b:hover {
   padding: 10px;
   overflow-y: auto;
   max-height: 1300px;
-  /* Images list-style-position: inside; */
 }
