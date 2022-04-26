@@ -1,4 +1,7 @@
+/* Imports google fonts api*/
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+/* General base style for all html pages */
 
 :root {
     background-color: rgb(141, 230, 213)
@@ -97,6 +100,8 @@ h2 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 0, 166, 0.648);
 }
 
+/* font awesome icons styles*/
+
 .fa-crown {
     font-size: 2.5rem;
     margin-left: 1rem
@@ -149,6 +154,8 @@ input::placeholder {
 #saveScoreBtn {
     border: none;
 }
+
+/* font awesome icons styles*/
 
 .fa-home {
     margin-left: 1rem;

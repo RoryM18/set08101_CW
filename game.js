@@ -1,3 +1,4 @@
+//Variables
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -12,6 +13,7 @@ let availableQuestion = {};
 
 var mySound
 
+//Question array
 let questions = [
     {
         question: "Eminem's 8 Mile is named after a road in which city?",
@@ -58,6 +60,7 @@ let questions = [
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
 
+//Function to start game
 startGame = () => {
     questionCounter = 0
     score = 0
@@ -65,6 +68,7 @@ startGame = () => {
     getNewQuestion()
 }
 
+//Function to get new question randomly while keeping count of what question the user is on
 getNewQuestion = () => {
     if(availableQuestion.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
@@ -100,6 +104,7 @@ choices.forEach(choice => {
 
         let classToApply = selcetedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
+        //Sound files for correct and incorrect answers
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
             mySound = new Audio("/set08101_CW/audio/correct.wav")
@@ -122,6 +127,7 @@ choices.forEach(choice => {
     })
 })
 
+//Adding points to the total score
 incrementScore = num => {
     score +=num
     scoreText.innerText = score

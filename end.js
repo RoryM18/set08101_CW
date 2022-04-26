@@ -1,3 +1,4 @@
+//Variables
 const username = document.querySelector('#username')
 const saveScoreBtn = document.querySelector('#saveScoreBtn')
 const finalScore = document.querySelector('#finalScore')
@@ -9,10 +10,12 @@ const MAX_HIGH_SCORES = 5
 
 finalScore.innerText = mostRecentScore
 
+//Function that disables dave button until user enters a name
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value
 })
 
+//function that organises usernames by their score highest at the top and lowest at the bottom
 saveHighScore = e => {
     e.preventDefault()
 

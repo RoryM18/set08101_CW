@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0338e7cba6.js" crossorigin="anonymous"></script>>
 </head>
+<!-- Body content of the end page-->
 <body>
     <div class="container">
         <div id="end" class="flex-center flex-column">
+            <!-- Header 1-->
             <h1 id="finalScore">0</h1>
             <form class="end-form-container">
+                <!-- Header 2-->
                 <h2 id="end-text">Enter your name below to save your score</h2>
+                <!-- input box for usernames-->
                 <input type="text" name="name" id="username" placeholder="Enter your name">
+                <!-- Save button which is disabled until user enters a name-->
                 <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save<i class="fa-solid fa-floppy-disk"></i></button>
             </form>
+            <!-- Links to beggining of quiz and home page-->
             <a href="/set08101_CW/game.html" class="btn">Play Again<i class="fa-solid fa-repeat"></i></a>
             <a href="/set08101_CW/index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
         </div>
