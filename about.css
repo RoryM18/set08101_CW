@@ -81,6 +81,7 @@ figcaption {
   background-color:rgb(230, 163, 167);
   color: white;
   font-style:italic;
+  font-size: 15px;
   padding: 2px;
   text-align: center;
 }
